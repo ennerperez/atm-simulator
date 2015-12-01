@@ -1,0 +1,17 @@
+{BANK} [{ATM}]
+---------------------------
+{CODE}
+---------------------------
+
+Fecha - Hora
+{DATE} - {TIME}
+
+Nro. Tarjeta:
+{CARD}
+
+{OPERATION}
+
+Nro. Cuenta:
+{ACCOUNT}
+
+{DETAIL}
