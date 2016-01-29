@@ -15,6 +15,33 @@ Public Class Printer
         Me.PanelPaper.Visible = False
     End Sub
 
+    Private Function SecureIt(source As String, Optional chr As Char = "+", Optional visible As Integer = 4) As String
+        If source.Length > visible Then
+            Dim hiddend = source.Substring(0, source.Length - visible).Length
+            'Return StrDup(hiddend, chr) & source.Substring(hiddend)
+            Return source.PadRight(hiddend, chr)
+        Else
+            Return source
+        End If
+    End Function
+
+    Public Function Generate(source As Models.Receipt) As String
+        Dim _template As String = My.Resources.Receipt
+
+        Dim _result As String = _template _
+            .Replace("{BANK}", source.Bank) _
+            .Replace("{ATM}", source.ATM) _
+            .Replace("{CODE}", source.Code) _
+            .Replace("{DATE}", source.Date.ToShortDateString) _
+            .Replace("{TIME}", source.Date.ToShortTimeString) _
+            .Replace("{CARD}", SecureIt(source.Card)) _
+            .Replace("{OPERATION}", source.Operation) _
+            .Replace("{ACCOUNT}", SecureIt(source.Account)) _
+            .Replace("{DETAIL}", source.Detail)
+
+        Return _result
+    End Function
+
     Private Sub TimerDiscart_Tick(sender As Object, e As EventArgs) Handles TimerDiscart.Tick
         Me.Discart()
         Me.TimerDiscart.Stop()
@@ -53,32 +80,6 @@ Public Class Printer
         Me.Discart()
     End Sub
 
-    Private Function SecureIt(source As String, Optional chr As Char = "+", Optional visible As Integer = 4) As String
-        If source.Length > visible Then
-            Dim hiddend = source.Substring(0, source.Length - visible).Length
-            Return StrDup(hiddend, chr) & source.Substring(hiddend)
-        Else
-            Return source
-        End If
-    End Function
-
-
-    Public Function Generate(source As Models.Receipt) As String
-        Dim _template As String = My.Resources.Receipt
-
-        Dim _result As String = _template _
-            .Replace("{BANK}", source.Bank) _
-            .Replace("{ATM}", source.ATM) _
-            .Replace("{CODE}", source.Code) _
-            .Replace("{DATE}", source.Date.ToShortDateString) _
-            .Replace("{TIME}", source.Date.ToShortTimeString) _
-            .Replace("{CARD}", SecureIt(source.Card)) _
-            .Replace("{OPERATION}", source.Operation) _
-            .Replace("{ACCOUNT}", SecureIt(source.Account)) _
-            .Replace("{DETAIL}", source.Detail)
-
-        Return _result
-    End Function
 
     Private Sub _EnabledChanged(sender As Object, e As EventArgs) Handles Me.EnabledChanged
         Me.PanelStatus.BackColor = IIf(Me.Enabled, Color.LimeGreen, Color.Red)

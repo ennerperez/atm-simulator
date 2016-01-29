@@ -115,6 +115,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="NativeMethods.vb" />
     <Compile Include="Views\AmountControl.Designer.vb">
       <DependentUpon>AmountControl.vb</DependentUpon>
     </Compile>
@@ -201,9 +202,6 @@
     <EmbeddedResource Include="Views\AmountControl.resx">
       <DependentUpon>AmountControl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Button.resx">
-      <DependentUpon>Button.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Card.resx">
       <DependentUpon>Card.vb</DependentUpon>
     </EmbeddedResource>
@@ -212,9 +210,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CurrencyBox.resx">
       <DependentUpon>CurrencyBox.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\NumericButton.resx">
-      <DependentUpon>NumericButton.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormConfig.resx">
       <DependentUpon>FormConfig.vb</DependentUpon>
@@ -257,11 +252,23 @@
     <Content Include="..\Simulator-Shared\microchip.ico">
       <Link>microchip.ico</Link>
     </Content>
-    <Content Include="..\Simulator-Shared\Resources\Cirrus.png">
-      <Link>Resources\Cirrus.png</Link>
+    <Content Include="..\Simulator-Shared\Resources\CCLicense.png">
+      <Link>Resources\CCLicense.png</Link>
     </Content>
-    <Content Include="..\Simulator-Shared\Resources\Maestro.png">
-      <Link>Resources\Maestro.png</Link>
+    <Content Include="..\Simulator-Shared\Resources\Chip.png">
+      <Link>Resources\Chip.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Cirrus0.png">
+      <Link>Resources\Cirrus0.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Cirrus90.png">
+      <Link>Resources\Cirrus90.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Maestro0.png">
+      <Link>Resources\Maestro0.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Maestro90.png">
+      <Link>Resources\Maestro90.png</Link>
     </Content>
     <Content Include="..\Simulator-Shared\Resources\Receipt.txt">
       <Link>Resources\Receipt.txt</Link>

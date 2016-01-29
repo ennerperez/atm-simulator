@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LabelPaper.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in diam fermentum, ultrices mauris non, fermentum quam. Cras aliquet iaculis dui sed tincidunt. Donec ac maximus dui. Suspendisse aliquam scelerisque augue vitae molestie. Ut congue consequat ante pulvinar pretium. Suspendisse potenti. In porta tortor est, vitae semper est eleifend eu. Nunc vehicula suscipit ante vitae consectetur. Nullam rutrum neque vel tortor aliquam, eget suscipit libero consequat. Cras ut accumsan felis, id sodales tortor.</value>
-  </data>
-  <metadata name="TimerDiscart.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timerDiscart.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="TimerPrinting.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>137, 17</value>
+  <metadata name="timerPrinting.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>134, 17</value>
   </metadata>
+  <data name="labelPaper.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in diam fermentum, ultrices mauris non, fermentum quam. Cras aliquet iaculis dui sed tincidunt. Donec ac maximus dui. Suspendisse aliquam scelerisque augue vitae molestie. Ut congue consequat ante pulvinar pretium. Suspendisse potenti. In porta tortor est, vitae semper est eleifend eu. Nunc vehicula suscipit ante vitae consectetur. Nullam rutrum neque vel tortor aliquam, eget suscipit libero consequat. Cras ut accumsan felis, id sodales tortor.</value>
+  </data>
 </root>

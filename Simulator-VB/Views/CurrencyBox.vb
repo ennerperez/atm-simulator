@@ -117,7 +117,7 @@
             Me.BackColor = SystemColors.Control
         ElseIf _percent > 0 AndAlso _percent < 25 Then
             Me.BackColor = Color.FromArgb(245, 68, 55)
-        ElseIf _percent >= 25 AndAlso _percent < 50
+        ElseIf _percent >= 25 AndAlso _percent < 50 Then
             Me.BackColor = Color.FromArgb(255, 153, 0)
         Else
             Me.BackColor = Color.FromArgb(77, 176, 81)
@@ -137,6 +137,4 @@
         Me.Value = CDbl(Me.ComboBoxDenomination.SelectedItem)
         SubTotal()
     End Sub
-
-
 End Class

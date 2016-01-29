@@ -74,7 +74,7 @@ Partial Class KeyPad
         Me.ButtonFix.Size = New System.Drawing.Size(128, 48)
         Me.ButtonFix.TabIndex = 13
         Me.ButtonFix.TabStop = False
-        Me.ButtonFix.Text = "COREGIR"
+        Me.ButtonFix.Text = "CORREGIR"
         Me.ButtonFix.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.ButtonFix.UseVisualStyleBackColor = False
         '

@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace ATM
 {
-    static class Program
+
+    static partial class Program
     {
-        
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -18,12 +18,16 @@ namespace ATM
         {
 
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);                      
-            
+            Application.SetCompatibleTextRenderingDefault(false);
+
             NativeMethods.AllocConsole();
             Application.Run(Controllers.ATM.Instance.View);
             NativeMethods.FreeConsole();
         }
+    }
+
+    static partial class Program
+    {
 
         public static string DataPath
         {
@@ -34,22 +38,45 @@ namespace ATM
             private set { }
         }
 
-    
-        public static string Clients_DataFile
+        public static string ATM_DataFile
         {
-            get
-            {
-                return System.IO.Path.Combine(DataPath, "Clients.json");
-            }
-            private set { }
+            get { return System.IO.Path.Combine(DataPath, "ATM.json"); }
         }
 
-        public static List<Models.Client> Clients { get; set; }
+        public static string Clients_DataFile
+        {
+            get { return System.IO.Path.Combine(DataPath, "Clients.json"); }
+        }
 
+        public static Models.ATM Definition { get; set; }
+        public static List<Models.Client> Clients { get; set; }
 
         #region Loaders
 
-      
+        private static void LoadDefinition()
+        {
+            //ATM
+            Definition = new Models.ATM();
+
+            {
+                if (!System.IO.File.Exists(ATM_DataFile))
+                {
+                    Definition.Code = "VATM001";
+                    Definition.Bank = "General";
+                    Definition.Boxes = new List<Models.Box>();
+                    Definition.Boxes.Add(new Models.Box(100, 100));
+                    Definition.Boxes.Add(new Models.Box(50, 75));
+                    Definition.Boxes.Add(new Models.Box(20, 50));
+                    Definition.Boxes.Add(new Models.Box(10, 25));
+                    Definition.Receipts = 50;
+                    SaveDefinition();
+                }
+
+            }
+
+            Definition = JsonConvert.DeserializeObject<Models.ATM>(System.IO.File.ReadAllText(ATM_DataFile));
+
+        }
 
         private static void LoadClients()
         {
@@ -128,7 +155,21 @@ namespace ATM
         }
 
         #endregion
-             
+        
+        public static void SaveDefinition()
+        {
+            try
+            {
+                object _data = JsonConvert.SerializeObject(Program.Definition);
+                if (!System.IO.Directory.Exists(DataPath))
+                    System.IO.Directory.CreateDirectory(DataPath);
+                System.IO.File.WriteAllText(ATM_DataFile, _data.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         public static void SaveClients()
         {
@@ -145,7 +186,17 @@ namespace ATM
             }
         }
 
-                
+        public static void Load()
+        {
+            LoadDefinition();
+            LoadClients();
+            
+            //FormATM.Restart();
+            //FormConfig.Height = FormATM.Height;
+            //FormConfig.Show();
+            //FormConfig.Location = new Point(FormATM.Location.X - FormConfig.Width - 3, FormATM.Location.Y);
+
+        }
 
     }
 }

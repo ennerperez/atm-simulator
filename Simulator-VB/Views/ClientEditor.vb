@@ -60,4 +60,5 @@
     Private Sub DataGridViewCards_DataError(sender As Object, e As DataGridViewDataErrorEventArgs) Handles DataGridViewCards.DataError
 
     End Sub
+
 End Class

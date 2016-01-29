@@ -63,9 +63,9 @@ namespace ATM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cirrus {
+        internal static System.Drawing.Bitmap CCLicense {
             get {
-                object obj = ResourceManager.GetObject("Cirrus", resourceCulture);
+                object obj = ResourceManager.GetObject("CCLicense", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,49 @@ namespace ATM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Maestro {
+        internal static System.Drawing.Bitmap Chip {
             get {
-                object obj = ResourceManager.GetObject("Maestro", resourceCulture);
+                object obj = ResourceManager.GetObject("Chip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cirrus0 {
+            get {
+                object obj = ResourceManager.GetObject("Cirrus0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cirrus90 {
+            get {
+                object obj = ResourceManager.GetObject("Cirrus90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maestro0 {
+            get {
+                object obj = ResourceManager.GetObject("Maestro0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maestro90 {
+            get {
+                object obj = ResourceManager.GetObject("Maestro90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

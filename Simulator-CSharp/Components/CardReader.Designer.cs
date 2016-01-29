@@ -73,7 +73,7 @@
             // pictureBoxCirrus
             // 
             this.pictureBoxCirrus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxCirrus.Image = global::ATM.Properties.Resources.Cirrus;
+            this.pictureBoxCirrus.Image = global::ATM.Properties.Resources.Cirrus90;
             this.pictureBoxCirrus.Location = new System.Drawing.Point(120, -14);
             this.pictureBoxCirrus.Name = "pictureBoxCirrus";
             this.pictureBoxCirrus.Size = new System.Drawing.Size(21, 30);
@@ -84,7 +84,7 @@
             // pictureBoxMaestro
             // 
             this.pictureBoxMaestro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxMaestro.Image = global::ATM.Properties.Resources.Maestro;
+            this.pictureBoxMaestro.Image = global::ATM.Properties.Resources.Maestro90;
             this.pictureBoxMaestro.Location = new System.Drawing.Point(147, -14);
             this.pictureBoxMaestro.Name = "pictureBoxMaestro";
             this.pictureBoxMaestro.Size = new System.Drawing.Size(21, 30);

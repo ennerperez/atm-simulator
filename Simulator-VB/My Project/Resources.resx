@@ -118,11 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Cirrus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\simulator-shared\resources\cirrus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CCLicense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\simulator-shared\resources\cclicense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Maestro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\simulator-shared\resources\maestro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\simulator-shared\resources\chip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cirrus0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\simulator-shared\resources\cirrus0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cirrus90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\simulator-shared\resources\cirrus90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maestro0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\simulator-shared\resources\maestro0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maestro90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\simulator-shared\resources\maestro90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Receipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\simulator-shared\resources\receipt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>

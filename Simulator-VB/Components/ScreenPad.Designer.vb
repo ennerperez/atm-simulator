@@ -46,8 +46,8 @@ Partial Class ScreenPad
         Me.TableLayoutPanelActions.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanelActions.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanelActions.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanelActions.Size = New System.Drawing.Size(64, 267)
-        Me.TableLayoutPanelActions.TabIndex = 2
+        Me.TableLayoutPanelActions.Size = New System.Drawing.Size(64, 260)
+        Me.TableLayoutPanelActions.TabIndex = 0
         '
         'ButtonAction1
         '
@@ -58,9 +58,9 @@ Partial Class ScreenPad
         Me.ButtonAction1.FlatAppearance.BorderSize = 0
         Me.ButtonAction1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAction1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonAction1.Location = New System.Drawing.Point(3, 201)
+        Me.ButtonAction1.Location = New System.Drawing.Point(3, 198)
         Me.ButtonAction1.Name = "ButtonAction1"
-        Me.ButtonAction1.Size = New System.Drawing.Size(58, 63)
+        Me.ButtonAction1.Size = New System.Drawing.Size(58, 59)
         Me.ButtonAction1.TabIndex = 1
         Me.ButtonAction1.TabStop = False
         Me.ButtonAction1.Tag = "1"
@@ -75,9 +75,9 @@ Partial Class ScreenPad
         Me.ButtonAction2.FlatAppearance.BorderSize = 0
         Me.ButtonAction2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAction2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonAction2.Location = New System.Drawing.Point(3, 135)
+        Me.ButtonAction2.Location = New System.Drawing.Point(3, 133)
         Me.ButtonAction2.Name = "ButtonAction2"
-        Me.ButtonAction2.Size = New System.Drawing.Size(58, 60)
+        Me.ButtonAction2.Size = New System.Drawing.Size(58, 59)
         Me.ButtonAction2.TabIndex = 1
         Me.ButtonAction2.TabStop = False
         Me.ButtonAction2.Tag = "2"
@@ -92,9 +92,9 @@ Partial Class ScreenPad
         Me.ButtonAction3.FlatAppearance.BorderSize = 0
         Me.ButtonAction3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAction3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonAction3.Location = New System.Drawing.Point(3, 69)
+        Me.ButtonAction3.Location = New System.Drawing.Point(3, 68)
         Me.ButtonAction3.Name = "ButtonAction3"
-        Me.ButtonAction3.Size = New System.Drawing.Size(58, 60)
+        Me.ButtonAction3.Size = New System.Drawing.Size(58, 59)
         Me.ButtonAction3.TabIndex = 1
         Me.ButtonAction3.TabStop = False
         Me.ButtonAction3.Tag = "3"
@@ -111,7 +111,7 @@ Partial Class ScreenPad
         Me.ButtonAction4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAction4.Location = New System.Drawing.Point(3, 3)
         Me.ButtonAction4.Name = "ButtonAction4"
-        Me.ButtonAction4.Size = New System.Drawing.Size(58, 60)
+        Me.ButtonAction4.Size = New System.Drawing.Size(58, 59)
         Me.ButtonAction4.TabIndex = 1
         Me.ButtonAction4.TabStop = False
         Me.ButtonAction4.Tag = "4"
@@ -123,7 +123,7 @@ Partial Class ScreenPad
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.TableLayoutPanelActions)
         Me.Name = "ScreenPad"
-        Me.Size = New System.Drawing.Size(64, 267)
+        Me.Size = New System.Drawing.Size(64, 260)
         Me.TableLayoutPanelActions.ResumeLayout(False)
         Me.ResumeLayout(False)
 

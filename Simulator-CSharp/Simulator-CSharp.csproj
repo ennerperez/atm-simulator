@@ -35,6 +35,7 @@
     <ApplicationIcon>..\Simulator-Shared\microchip.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MultiPanelControl, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MultiPanelControl.1.0.0.1\lib\net20\MultiPanelControl.dll</HintPath>
       <Private>True</Private>
@@ -79,6 +80,12 @@
     <Compile Include="Components\Printer.Designer.cs">
       <DependentUpon>Printer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\ScreenPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ScreenPad.Designer.cs">
+      <DependentUpon>ScreenPad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ATMControllers.cs" />
     <Compile Include="Controls\Button.cs">
       <SubType>Component</SubType>
@@ -90,6 +97,30 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AmountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AmountControl.Designer.cs">
+      <DependentUpon>AmountControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Card.Designer.cs">
+      <DependentUpon>Card.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ClientEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ClientEditor.Designer.cs">
+      <DependentUpon>ClientEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CurrencyBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CurrencyBox.Designer.cs">
+      <DependentUpon>CurrencyBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormATM.cs">
       <SubType>Form</SubType>
@@ -130,13 +161,25 @@
     <EmbeddedResource Include="Components\Printer.resx">
       <DependentUpon>Printer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Button.resx">
-      <DependentUpon>Button.cs</DependentUpon>
+    <EmbeddedResource Include="Components\ScreenPad.resx">
+      <DependentUpon>ScreenPad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AmountControl.resx">
+      <DependentUpon>AmountControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Card.resx">
+      <DependentUpon>Card.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ClientEditor.resx">
+      <DependentUpon>ClientEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CurrencyBox.resx">
+      <DependentUpon>CurrencyBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormATM.resx">
       <DependentUpon>FormATM.cs</DependentUpon>
@@ -162,11 +205,23 @@
     <Content Include="..\Simulator-Shared\microchip.ico">
       <Link>microchip.ico</Link>
     </Content>
-    <Content Include="..\Simulator-Shared\Resources\Cirrus.png">
-      <Link>Resources\Cirrus.png</Link>
+    <Content Include="..\Simulator-Shared\Resources\CCLicense.png">
+      <Link>Resources\CCLicense.png</Link>
     </Content>
-    <Content Include="..\Simulator-Shared\Resources\Maestro.png">
-      <Link>Resources\Maestro.png</Link>
+    <Content Include="..\Simulator-Shared\Resources\Chip.png">
+      <Link>Resources\Chip.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Cirrus0.png">
+      <Link>Resources\Cirrus0.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Cirrus90.png">
+      <Link>Resources\Cirrus90.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Maestro0.png">
+      <Link>Resources\Maestro0.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Maestro90.png">
+      <Link>Resources\Maestro90.png</Link>
     </Content>
     <Content Include="..\Simulator-Shared\Resources\Receipt.txt">
       <Link>Resources\Receipt.txt</Link>

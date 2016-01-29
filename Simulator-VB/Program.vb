@@ -7,16 +7,16 @@ Namespace My
 
     Partial Friend Class MyApplication
         Private Sub MyApplication_Startup(sender As Object, e As ApplicationServices.StartupEventArgs) Handles Me.Startup
-            AllocConsole()
+            NativeMethods.AllocConsole()
         End Sub
 
-        Declare Function AllocConsole Lib "kernel32" () As Int32
-        Declare Function FreeConsole Lib "kernel32" () As Int32
+        Private Sub MyApplication_Shutdown(sender As Object, e As EventArgs) Handles Me.Shutdown
+            NativeMethods.FreeConsole()
+        End Sub
 
     End Class
 
 End Namespace
-
 
 Public Module Program
 

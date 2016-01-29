@@ -136,7 +136,7 @@
             this.numericButtonDot.Enabled = false;
             this.numericButtonDot.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButtonDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButtonDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButtonDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButtonDot.Letters = "";
             this.numericButtonDot.Location = new System.Drawing.Point(108, 162);
             this.numericButtonDot.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -156,7 +156,7 @@
             this.numericButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton9.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton9.Letters = "WXY";
             this.numericButton9.Location = new System.Drawing.Point(108, 108);
             this.numericButton9.Name = "numericButton9";
@@ -176,7 +176,7 @@
             this.numericButton0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton0.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton0.Letters = "";
             this.numericButton0.Location = new System.Drawing.Point(54, 162);
             this.numericButton0.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -197,7 +197,7 @@
             this.numericButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton6.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton6.Letters = "MNO";
             this.numericButton6.Location = new System.Drawing.Point(108, 54);
             this.numericButton6.Name = "numericButton6";
@@ -217,7 +217,7 @@
             this.numericButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton8.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton8.Letters = "TUV";
             this.numericButton8.Location = new System.Drawing.Point(54, 108);
             this.numericButton8.Name = "numericButton8";
@@ -237,7 +237,7 @@
             this.numericButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton3.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton3.Letters = "DEF";
             this.numericButton3.Location = new System.Drawing.Point(108, 0);
             this.numericButton3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
@@ -259,7 +259,7 @@
             this.numericButton00.Enabled = false;
             this.numericButton00.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton00.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton00.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton00.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton00.Letters = "";
             this.numericButton00.Location = new System.Drawing.Point(0, 162);
             this.numericButton00.Margin = new System.Windows.Forms.Padding(0, 3, 3, 0);
@@ -279,7 +279,7 @@
             this.numericButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton5.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton5.Letters = "JKL";
             this.numericButton5.Location = new System.Drawing.Point(54, 54);
             this.numericButton5.Name = "numericButton5";
@@ -299,7 +299,7 @@
             this.numericButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton7.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton7.Letters = "PRS";
             this.numericButton7.Location = new System.Drawing.Point(0, 108);
             this.numericButton7.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
@@ -320,7 +320,7 @@
             this.numericButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton2.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton2.Letters = "ABC";
             this.numericButton2.Location = new System.Drawing.Point(54, 0);
             this.numericButton2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
@@ -341,7 +341,7 @@
             this.numericButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton4.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton4.Letters = "GHI";
             this.numericButton4.Location = new System.Drawing.Point(0, 54);
             this.numericButton4.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
@@ -362,7 +362,7 @@
             this.numericButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numericButton1.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.numericButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.numericButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.numericButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.numericButton1.Letters = "QZ";
             this.numericButton1.Location = new System.Drawing.Point(0, 0);
             this.numericButton1.Margin = new System.Windows.Forms.Padding(0, 0, 3, 3);

@@ -17,8 +17,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulator-Shared", "Simulat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{A7091809-2C28-46DF-B9A1-2A87B0EE4AB8}"
 	ProjectSection(SolutionItems) = preProject
-		Simulator-Shared\Resources\Cirrus.png = Simulator-Shared\Resources\Cirrus.png
-		Simulator-Shared\Resources\Maestro.png = Simulator-Shared\Resources\Maestro.png
+		Simulator-Shared\Resources\CCLicense.png = Simulator-Shared\Resources\CCLicense.png
+		Simulator-Shared\Resources\Chip.png = Simulator-Shared\Resources\Chip.png
+		Simulator-Shared\Resources\Cirrus0.png = Simulator-Shared\Resources\Cirrus0.png
+		Simulator-Shared\Resources\Cirrus90.png = Simulator-Shared\Resources\Cirrus90.png
+		Simulator-Shared\Resources\Maestro0.png = Simulator-Shared\Resources\Maestro0.png
+		Simulator-Shared\Resources\Maestro90.png = Simulator-Shared\Resources\Maestro90.png
 		Simulator-Shared\Resources\Receipt.txt = Simulator-Shared\Resources\Receipt.txt
 	EndProjectSection
 EndProject

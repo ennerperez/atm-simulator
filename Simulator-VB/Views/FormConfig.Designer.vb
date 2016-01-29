@@ -23,11 +23,11 @@ Partial Class FormConfig
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"0000 0000 0000 0000", "Enner Pérez"}, 0)
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"0000 0000 0000 0000", "Enner Pérez"}, 0)
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormConfig))
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Cliente 1", "Enner Pérez"}, 0)
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Cliente 1", "Enner Pérez"}, 0)
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ButtonApply = New System.Windows.Forms.Button()
         Me.ButtonRestore = New System.Windows.Forms.Button()
         Me.TabControlConfig = New System.Windows.Forms.TabControl()
@@ -66,10 +66,15 @@ Partial Class FormConfig
         Me.TabPageResources = New System.Windows.Forms.TabPage()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.LabelReceipts = New System.Windows.Forms.Label()
+        Me.AmountControlReceipts = New ATM.AmountControl()
         Me.GroupBoxCurrencyBoxes = New System.Windows.Forms.GroupBox()
+        Me.CurrencyBox1 = New ATM.CurrencyBox()
         Me.PanelTotal = New System.Windows.Forms.Panel()
         Me.LabelAvailablePreview = New System.Windows.Forms.Label()
         Me.LabelAvailablePreviewTitle = New System.Windows.Forms.Label()
+        Me.CurrencyBox2 = New ATM.CurrencyBox()
+        Me.CurrencyBox3 = New ATM.CurrencyBox()
+        Me.CurrencyBox4 = New ATM.CurrencyBox()
         Me.TabPageCards = New System.Windows.Forms.TabPage()
         Me.ListViewCards = New System.Windows.Forms.ListView()
         Me.ImageListCards = New System.Windows.Forms.ImageList(Me.components)
@@ -77,18 +82,13 @@ Partial Class FormConfig
         Me.ListViewClients = New System.Windows.Forms.ListView()
         Me.ImageListClients = New System.Windows.Forms.ImageList(Me.components)
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.LabelTitle = New System.Windows.Forms.Label()
-        Me.PictureBoxCC = New System.Windows.Forms.PictureBox()
-        Me.ToolTipMain = New System.Windows.Forms.ToolTip(Me.components)
-        Me.AmountControlReceipts = New ATM.AmountControl()
-        Me.CurrencyBox1 = New ATM.CurrencyBox()
-        Me.CurrencyBox2 = New ATM.CurrencyBox()
-        Me.CurrencyBox3 = New ATM.CurrencyBox()
-        Me.CurrencyBox4 = New ATM.CurrencyBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ColumnDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnSameBank = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnOthersBanks = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LabelTitle = New System.Windows.Forms.Label()
+        Me.PictureBoxCC = New System.Windows.Forms.PictureBox()
+        Me.ToolTipMain = New System.Windows.Forms.ToolTip(Me.components)
         Me.TabControlConfig.SuspendLayout()
         Me.TabPageGeneral.SuspendLayout()
         Me.GroupBoxAbout.SuspendLayout()
@@ -103,14 +103,14 @@ Partial Class FormConfig
         Me.TabPageCards.SuspendLayout()
         Me.TabPageClientes.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBoxCC, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxCC, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ButtonApply
         '
         Me.ButtonApply.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonApply.Location = New System.Drawing.Point(505, 410)
+        Me.ButtonApply.Location = New System.Drawing.Point(505, 387)
         Me.ButtonApply.Name = "ButtonApply"
         Me.ButtonApply.Size = New System.Drawing.Size(75, 23)
         Me.ButtonApply.TabIndex = 3
@@ -121,7 +121,7 @@ Partial Class FormConfig
         '
         Me.ButtonRestore.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonRestore.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.ButtonRestore.Location = New System.Drawing.Point(424, 410)
+        Me.ButtonRestore.Location = New System.Drawing.Point(424, 387)
         Me.ButtonRestore.Name = "ButtonRestore"
         Me.ButtonRestore.Size = New System.Drawing.Size(75, 23)
         Me.ButtonRestore.TabIndex = 2
@@ -141,7 +141,7 @@ Partial Class FormConfig
         Me.TabControlConfig.Location = New System.Drawing.Point(12, 41)
         Me.TabControlConfig.Name = "TabControlConfig"
         Me.TabControlConfig.SelectedIndex = 0
-        Me.TabControlConfig.Size = New System.Drawing.Size(600, 471)
+        Me.TabControlConfig.Size = New System.Drawing.Size(600, 448)
         Me.TabControlConfig.TabIndex = 2
         '
         'TabPageGeneral
@@ -156,7 +156,7 @@ Partial Class FormConfig
         Me.TabPageGeneral.Location = New System.Drawing.Point(4, 22)
         Me.TabPageGeneral.Name = "TabPageGeneral"
         Me.TabPageGeneral.Padding = New System.Windows.Forms.Padding(9)
-        Me.TabPageGeneral.Size = New System.Drawing.Size(592, 445)
+        Me.TabPageGeneral.Size = New System.Drawing.Size(592, 422)
         Me.TabPageGeneral.TabIndex = 2
         Me.TabPageGeneral.Text = "Generales"
         Me.TabPageGeneral.UseVisualStyleBackColor = True
@@ -169,7 +169,7 @@ Partial Class FormConfig
         Me.GroupBoxAbout.Location = New System.Drawing.Point(9, 365)
         Me.GroupBoxAbout.Name = "GroupBoxAbout"
         Me.GroupBoxAbout.Padding = New System.Windows.Forms.Padding(6, 3, 6, 6)
-        Me.GroupBoxAbout.Size = New System.Drawing.Size(574, 55)
+        Me.GroupBoxAbout.Size = New System.Drawing.Size(557, 55)
         Me.GroupBoxAbout.TabIndex = 4
         Me.GroupBoxAbout.TabStop = False
         Me.GroupBoxAbout.Text = "Documentación"
@@ -213,7 +213,7 @@ Partial Class FormConfig
         Me.GroupBoxClientes.Location = New System.Drawing.Point(9, 269)
         Me.GroupBoxClientes.Name = "GroupBoxClientes"
         Me.GroupBoxClientes.Padding = New System.Windows.Forms.Padding(6, 3, 6, 6)
-        Me.GroupBoxClientes.Size = New System.Drawing.Size(574, 96)
+        Me.GroupBoxClientes.Size = New System.Drawing.Size(557, 96)
         Me.GroupBoxClientes.TabIndex = 3
         Me.GroupBoxClientes.TabStop = False
         Me.GroupBoxClientes.Text = "Resumen clientes"
@@ -237,7 +237,7 @@ Partial Class FormConfig
         Me.LabelCards.Location = New System.Drawing.Point(131, 62)
         Me.LabelCards.Name = "LabelCards"
         Me.LabelCards.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelCards.Size = New System.Drawing.Size(434, 23)
+        Me.LabelCards.Size = New System.Drawing.Size(417, 23)
         Me.LabelCards.TabIndex = 5
         Me.LabelCards.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -249,7 +249,7 @@ Partial Class FormConfig
         Me.LabelAccounts.Location = New System.Drawing.Point(131, 39)
         Me.LabelAccounts.Name = "LabelAccounts"
         Me.LabelAccounts.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelAccounts.Size = New System.Drawing.Size(434, 23)
+        Me.LabelAccounts.Size = New System.Drawing.Size(417, 23)
         Me.LabelAccounts.TabIndex = 3
         Me.LabelAccounts.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -283,7 +283,7 @@ Partial Class FormConfig
         Me.LabelClients.Location = New System.Drawing.Point(131, 16)
         Me.LabelClients.Name = "LabelClients"
         Me.LabelClients.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelClients.Size = New System.Drawing.Size(434, 23)
+        Me.LabelClients.Size = New System.Drawing.Size(417, 23)
         Me.LabelClients.TabIndex = 1
         Me.LabelClients.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -299,7 +299,7 @@ Partial Class FormConfig
         Me.GroupBox1.Location = New System.Drawing.Point(9, 169)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(6, 3, 6, 6)
-        Me.GroupBox1.Size = New System.Drawing.Size(574, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(557, 100)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Estatus"
@@ -323,7 +323,7 @@ Partial Class FormConfig
         Me.LabelTimeOn.Location = New System.Drawing.Point(134, 39)
         Me.LabelTimeOn.Name = "LabelTimeOn"
         Me.LabelTimeOn.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelTimeOn.Size = New System.Drawing.Size(431, 23)
+        Me.LabelTimeOn.Size = New System.Drawing.Size(414, 23)
         Me.LabelTimeOn.TabIndex = 3
         Me.LabelTimeOn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -346,7 +346,7 @@ Partial Class FormConfig
         Me.LabelReceiptsGeneral.Location = New System.Drawing.Point(134, 62)
         Me.LabelReceiptsGeneral.Name = "LabelReceiptsGeneral"
         Me.LabelReceiptsGeneral.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelReceiptsGeneral.Size = New System.Drawing.Size(431, 23)
+        Me.LabelReceiptsGeneral.Size = New System.Drawing.Size(414, 23)
         Me.LabelReceiptsGeneral.TabIndex = 5
         Me.LabelReceiptsGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -369,7 +369,7 @@ Partial Class FormConfig
         Me.LabelState.Location = New System.Drawing.Point(134, 16)
         Me.LabelState.Name = "LabelState"
         Me.LabelState.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelState.Size = New System.Drawing.Size(431, 23)
+        Me.LabelState.Size = New System.Drawing.Size(414, 23)
         Me.LabelState.TabIndex = 1
         Me.LabelState.Text = "En linea"
         Me.LabelState.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -386,7 +386,7 @@ Partial Class FormConfig
         Me.GroupBoxCurrency.Location = New System.Drawing.Point(9, 73)
         Me.GroupBoxCurrency.Name = "GroupBoxCurrency"
         Me.GroupBoxCurrency.Padding = New System.Windows.Forms.Padding(6, 3, 6, 6)
-        Me.GroupBoxCurrency.Size = New System.Drawing.Size(574, 96)
+        Me.GroupBoxCurrency.Size = New System.Drawing.Size(557, 96)
         Me.GroupBoxCurrency.TabIndex = 1
         Me.GroupBoxCurrency.TabStop = False
         Me.GroupBoxCurrency.Text = "Resumen financiero"
@@ -410,7 +410,7 @@ Partial Class FormConfig
         Me.LabelDisposed.Location = New System.Drawing.Point(134, 62)
         Me.LabelDisposed.Name = "LabelDisposed"
         Me.LabelDisposed.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelDisposed.Size = New System.Drawing.Size(431, 23)
+        Me.LabelDisposed.Size = New System.Drawing.Size(414, 23)
         Me.LabelDisposed.TabIndex = 5
         Me.LabelDisposed.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -433,7 +433,7 @@ Partial Class FormConfig
         Me.LabelAvailable.Location = New System.Drawing.Point(134, 39)
         Me.LabelAvailable.Name = "LabelAvailable"
         Me.LabelAvailable.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelAvailable.Size = New System.Drawing.Size(431, 23)
+        Me.LabelAvailable.Size = New System.Drawing.Size(414, 23)
         Me.LabelAvailable.TabIndex = 4
         Me.LabelAvailable.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -456,7 +456,7 @@ Partial Class FormConfig
         Me.LabelOpen.Location = New System.Drawing.Point(134, 16)
         Me.LabelOpen.Name = "LabelOpen"
         Me.LabelOpen.Padding = New System.Windows.Forms.Padding(3)
-        Me.LabelOpen.Size = New System.Drawing.Size(431, 23)
+        Me.LabelOpen.Size = New System.Drawing.Size(414, 23)
         Me.LabelOpen.TabIndex = 3
         Me.LabelOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -472,7 +472,7 @@ Partial Class FormConfig
         Me.GroupBox3.Location = New System.Drawing.Point(9, 9)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(6, 3, 6, 6)
-        Me.GroupBox3.Size = New System.Drawing.Size(574, 64)
+        Me.GroupBox3.Size = New System.Drawing.Size(557, 64)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Ajustes"
@@ -480,7 +480,7 @@ Partial Class FormConfig
         'ButtonEditGeneral
         '
         Me.ButtonEditGeneral.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonEditGeneral.Location = New System.Drawing.Point(490, 30)
+        Me.ButtonEditGeneral.Location = New System.Drawing.Point(473, 30)
         Me.ButtonEditGeneral.Name = "ButtonEditGeneral"
         Me.ButtonEditGeneral.Size = New System.Drawing.Size(75, 23)
         Me.ButtonEditGeneral.TabIndex = 5
@@ -492,7 +492,7 @@ Partial Class FormConfig
         '
         Me.ButtonApplyGeneral.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ButtonApplyGeneral.Enabled = False
-        Me.ButtonApplyGeneral.Location = New System.Drawing.Point(409, 30)
+        Me.ButtonApplyGeneral.Location = New System.Drawing.Point(392, 30)
         Me.ButtonApplyGeneral.Name = "ButtonApplyGeneral"
         Me.ButtonApplyGeneral.Size = New System.Drawing.Size(75, 23)
         Me.ButtonApplyGeneral.TabIndex = 4
@@ -507,7 +507,7 @@ Partial Class FormConfig
         Me.TextBoxBank.Location = New System.Drawing.Point(115, 32)
         Me.TextBoxBank.MaxLength = 256
         Me.TextBoxBank.Name = "TextBoxBank"
-        Me.TextBoxBank.Size = New System.Drawing.Size(288, 20)
+        Me.TextBoxBank.Size = New System.Drawing.Size(271, 20)
         Me.TextBoxBank.TabIndex = 3
         '
         'LabelCode
@@ -548,7 +548,7 @@ Partial Class FormConfig
         Me.TabPageResources.Location = New System.Drawing.Point(4, 22)
         Me.TabPageResources.Name = "TabPageResources"
         Me.TabPageResources.Padding = New System.Windows.Forms.Padding(9)
-        Me.TabPageResources.Size = New System.Drawing.Size(592, 445)
+        Me.TabPageResources.Size = New System.Drawing.Size(592, 422)
         Me.TabPageResources.TabIndex = 0
         Me.TabPageResources.Text = "Recursos"
         Me.TabPageResources.UseVisualStyleBackColor = True
@@ -575,6 +575,19 @@ Partial Class FormConfig
         Me.LabelReceipts.TabIndex = 0
         Me.LabelReceipts.Text = "Papel de recibos"
         '
+        'AmountControlReceipts
+        '
+        Me.AmountControlReceipts.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AmountControlReceipts.BackColor = System.Drawing.SystemColors.Window
+        Me.AmountControlReceipts.Location = New System.Drawing.Point(101, 19)
+        Me.AmountControlReceipts.Maximum = 100
+        Me.AmountControlReceipts.Minimum = 0
+        Me.AmountControlReceipts.Name = "AmountControlReceipts"
+        Me.AmountControlReceipts.Size = New System.Drawing.Size(464, 37)
+        Me.AmountControlReceipts.TabIndex = 1
+        Me.AmountControlReceipts.Value = 10
+        '
         'GroupBoxCurrencyBoxes
         '
         Me.GroupBoxCurrencyBoxes.Controls.Add(Me.CurrencyBox1)
@@ -590,6 +603,22 @@ Partial Class FormConfig
         Me.GroupBoxCurrencyBoxes.TabIndex = 0
         Me.GroupBoxCurrencyBoxes.TabStop = False
         Me.GroupBoxCurrencyBoxes.Text = "Billetes"
+        '
+        'CurrencyBox1
+        '
+        Me.CurrencyBox1.Amount = 100
+        Me.CurrencyBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CurrencyBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.CurrencyBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CurrencyBox1.Location = New System.Drawing.Point(9, 19)
+        Me.CurrencyBox1.Maximum = 100
+        Me.CurrencyBox1.Minimum = 0
+        Me.CurrencyBox1.Name = "CurrencyBox1"
+        Me.CurrencyBox1.Padding = New System.Windows.Forms.Padding(6)
+        Me.CurrencyBox1.Size = New System.Drawing.Size(556, 54)
+        Me.CurrencyBox1.TabIndex = 0
+        Me.CurrencyBox1.Value = 0R
         '
         'PanelTotal
         '
@@ -628,136 +657,6 @@ Partial Class FormConfig
         Me.LabelAvailablePreviewTitle.TabIndex = 0
         Me.LabelAvailablePreviewTitle.Text = "Disponible:"
         Me.LabelAvailablePreviewTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TabPageCards
-        '
-        Me.TabPageCards.Controls.Add(Me.ListViewCards)
-        Me.TabPageCards.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageCards.Name = "TabPageCards"
-        Me.TabPageCards.Padding = New System.Windows.Forms.Padding(9)
-        Me.TabPageCards.Size = New System.Drawing.Size(592, 445)
-        Me.TabPageCards.TabIndex = 1
-        Me.TabPageCards.Text = "Tarjetas"
-        Me.TabPageCards.UseVisualStyleBackColor = True
-        '
-        'ListViewCards
-        '
-        Me.ListViewCards.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ListViewCards.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListViewCards.FullRowSelect = True
-        Me.ListViewCards.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
-        Me.ListViewCards.LargeImageList = Me.ImageListCards
-        Me.ListViewCards.Location = New System.Drawing.Point(9, 9)
-        Me.ListViewCards.Name = "ListViewCards"
-        Me.ListViewCards.Size = New System.Drawing.Size(574, 427)
-        Me.ListViewCards.SmallImageList = Me.ImageListCards
-        Me.ListViewCards.TabIndex = 0
-        Me.ListViewCards.UseCompatibleStateImageBehavior = False
-        Me.ListViewCards.View = System.Windows.Forms.View.List
-        '
-        'ImageListCards
-        '
-        Me.ImageListCards.ImageStream = CType(resources.GetObject("ImageListCards.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageListCards.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageListCards.Images.SetKeyName(0, "microchip_expired.png")
-        Me.ImageListCards.Images.SetKeyName(1, "microchip_notexpired.png")
-        Me.ImageListCards.Images.SetKeyName(2, "microchip_expired_password.png")
-        Me.ImageListCards.Images.SetKeyName(3, "microchip.png")
-        '
-        'TabPageClientes
-        '
-        Me.TabPageClientes.Controls.Add(Me.ListViewClients)
-        Me.TabPageClientes.Location = New System.Drawing.Point(4, 22)
-        Me.TabPageClientes.Name = "TabPageClientes"
-        Me.TabPageClientes.Padding = New System.Windows.Forms.Padding(9)
-        Me.TabPageClientes.Size = New System.Drawing.Size(592, 445)
-        Me.TabPageClientes.TabIndex = 3
-        Me.TabPageClientes.Text = "Clientes"
-        Me.TabPageClientes.UseVisualStyleBackColor = True
-        '
-        'ListViewClients
-        '
-        Me.ListViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ListViewClients.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ListViewClients.FullRowSelect = True
-        Me.ListViewClients.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem2})
-        Me.ListViewClients.LargeImageList = Me.ImageListClients
-        Me.ListViewClients.Location = New System.Drawing.Point(9, 9)
-        Me.ListViewClients.Name = "ListViewClients"
-        Me.ListViewClients.Size = New System.Drawing.Size(574, 427)
-        Me.ListViewClients.SmallImageList = Me.ImageListClients
-        Me.ListViewClients.TabIndex = 2
-        Me.ListViewClients.UseCompatibleStateImageBehavior = False
-        Me.ListViewClients.View = System.Windows.Forms.View.List
-        '
-        'ImageListClients
-        '
-        Me.ImageListClients.ImageStream = CType(resources.GetObject("ImageListClients.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageListClients.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageListClients.Images.SetKeyName(0, "btn_clients_bg.gif")
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.DataGridView1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(9)
-        Me.TabPage1.Size = New System.Drawing.Size(592, 445)
-        Me.TabPage1.TabIndex = 4
-        Me.TabPage1.Text = "Tarifas"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'LabelTitle
-        '
-        Me.LabelTitle.AutoSize = True
-        Me.LabelTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTitle.Location = New System.Drawing.Point(12, 9)
-        Me.LabelTitle.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.LabelTitle.Name = "LabelTitle"
-        Me.LabelTitle.Size = New System.Drawing.Size(192, 26)
-        Me.LabelTitle.TabIndex = 0
-        Me.LabelTitle.Text = "Simulador de ATM"
-        '
-        'PictureBoxCC
-        '
-        Me.PictureBoxCC.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxCC.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBoxCC.Image = CType(resources.GetObject("PictureBoxCC.Image"), System.Drawing.Image)
-        Me.PictureBoxCC.Location = New System.Drawing.Point(520, 12)
-        Me.PictureBoxCC.Name = "PictureBoxCC"
-        Me.PictureBoxCC.Size = New System.Drawing.Size(88, 31)
-        Me.PictureBoxCC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBoxCC.TabIndex = 10
-        Me.PictureBoxCC.TabStop = False
-        '
-        'AmountControlReceipts
-        '
-        Me.AmountControlReceipts.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AmountControlReceipts.BackColor = System.Drawing.SystemColors.Window
-        Me.AmountControlReceipts.Location = New System.Drawing.Point(101, 19)
-        Me.AmountControlReceipts.Maximum = 100
-        Me.AmountControlReceipts.Minimum = 0
-        Me.AmountControlReceipts.Name = "AmountControlReceipts"
-        Me.AmountControlReceipts.Size = New System.Drawing.Size(464, 37)
-        Me.AmountControlReceipts.TabIndex = 1
-        Me.AmountControlReceipts.Value = 10
-        '
-        'CurrencyBox1
-        '
-        Me.CurrencyBox1.Amount = 100
-        Me.CurrencyBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CurrencyBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.CurrencyBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CurrencyBox1.Location = New System.Drawing.Point(9, 19)
-        Me.CurrencyBox1.Maximum = 100
-        Me.CurrencyBox1.Minimum = 0
-        Me.CurrencyBox1.Name = "CurrencyBox1"
-        Me.CurrencyBox1.Padding = New System.Windows.Forms.Padding(6)
-        Me.CurrencyBox1.Size = New System.Drawing.Size(556, 54)
-        Me.CurrencyBox1.TabIndex = 0
-        Me.CurrencyBox1.Value = 0R
         '
         'CurrencyBox2
         '
@@ -807,6 +706,84 @@ Partial Class FormConfig
         Me.CurrencyBox4.TabIndex = 3
         Me.CurrencyBox4.Value = 0R
         '
+        'TabPageCards
+        '
+        Me.TabPageCards.Controls.Add(Me.ListViewCards)
+        Me.TabPageCards.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageCards.Name = "TabPageCards"
+        Me.TabPageCards.Padding = New System.Windows.Forms.Padding(9)
+        Me.TabPageCards.Size = New System.Drawing.Size(592, 422)
+        Me.TabPageCards.TabIndex = 1
+        Me.TabPageCards.Text = "Tarjetas"
+        Me.TabPageCards.UseVisualStyleBackColor = True
+        '
+        'ListViewCards
+        '
+        Me.ListViewCards.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListViewCards.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListViewCards.FullRowSelect = True
+        Me.ListViewCards.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem3})
+        Me.ListViewCards.LargeImageList = Me.ImageListCards
+        Me.ListViewCards.Location = New System.Drawing.Point(9, 9)
+        Me.ListViewCards.Name = "ListViewCards"
+        Me.ListViewCards.Size = New System.Drawing.Size(574, 404)
+        Me.ListViewCards.SmallImageList = Me.ImageListCards
+        Me.ListViewCards.TabIndex = 0
+        Me.ListViewCards.UseCompatibleStateImageBehavior = False
+        Me.ListViewCards.View = System.Windows.Forms.View.List
+        '
+        'ImageListCards
+        '
+        Me.ImageListCards.ImageStream = CType(resources.GetObject("ImageListCards.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageListCards.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageListCards.Images.SetKeyName(0, "microchip_expired.png")
+        Me.ImageListCards.Images.SetKeyName(1, "microchip_notexpired.png")
+        Me.ImageListCards.Images.SetKeyName(2, "microchip_expired_password.png")
+        Me.ImageListCards.Images.SetKeyName(3, "microchip.png")
+        '
+        'TabPageClientes
+        '
+        Me.TabPageClientes.Controls.Add(Me.ListViewClients)
+        Me.TabPageClientes.Location = New System.Drawing.Point(4, 22)
+        Me.TabPageClientes.Name = "TabPageClientes"
+        Me.TabPageClientes.Padding = New System.Windows.Forms.Padding(9)
+        Me.TabPageClientes.Size = New System.Drawing.Size(592, 422)
+        Me.TabPageClientes.TabIndex = 3
+        Me.TabPageClientes.Text = "Clientes"
+        Me.TabPageClientes.UseVisualStyleBackColor = True
+        '
+        'ListViewClients
+        '
+        Me.ListViewClients.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ListViewClients.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListViewClients.FullRowSelect = True
+        Me.ListViewClients.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
+        Me.ListViewClients.LargeImageList = Me.ImageListClients
+        Me.ListViewClients.Location = New System.Drawing.Point(9, 9)
+        Me.ListViewClients.Name = "ListViewClients"
+        Me.ListViewClients.Size = New System.Drawing.Size(574, 404)
+        Me.ListViewClients.SmallImageList = Me.ImageListClients
+        Me.ListViewClients.TabIndex = 2
+        Me.ListViewClients.UseCompatibleStateImageBehavior = False
+        Me.ListViewClients.View = System.Windows.Forms.View.List
+        '
+        'ImageListClients
+        '
+        Me.ImageListClients.ImageStream = CType(resources.GetObject("ImageListClients.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageListClients.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageListClients.Images.SetKeyName(0, "client_account_template.png")
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.DataGridView1)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(9)
+        Me.TabPage1.Size = New System.Drawing.Size(592, 422)
+        Me.TabPage1.TabIndex = 4
+        Me.TabPage1.Text = "Tarifas"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
@@ -819,7 +796,7 @@ Partial Class FormConfig
         Me.DataGridView1.Location = New System.Drawing.Point(9, 9)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(574, 427)
+        Me.DataGridView1.Size = New System.Drawing.Size(574, 404)
         Me.DataGridView1.TabIndex = 0
         '
         'ColumnDescription
@@ -830,24 +807,45 @@ Partial Class FormConfig
         '
         'ColumnSameBank
         '
-        DataGridViewCellStyle1.Format = "C2"
-        Me.ColumnSameBank.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle3.Format = "C2"
+        Me.ColumnSameBank.DefaultCellStyle = DataGridViewCellStyle3
         Me.ColumnSameBank.HeaderText = "Mismo Banco"
         Me.ColumnSameBank.Name = "ColumnSameBank"
         '
         'ColumnOthersBanks
         '
-        DataGridViewCellStyle2.Format = "C2"
-        Me.ColumnOthersBanks.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle4.Format = "C2"
+        Me.ColumnOthersBanks.DefaultCellStyle = DataGridViewCellStyle4
         Me.ColumnOthersBanks.HeaderText = "Otros Bancos"
         Me.ColumnOthersBanks.Name = "ColumnOthersBanks"
         '
+        'LabelTitle
+        '
+        Me.LabelTitle.AutoSize = True
+        Me.LabelTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTitle.Location = New System.Drawing.Point(12, 9)
+        Me.LabelTitle.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.LabelTitle.Name = "LabelTitle"
+        Me.LabelTitle.Size = New System.Drawing.Size(192, 26)
+        Me.LabelTitle.TabIndex = 0
+        Me.LabelTitle.Text = "Simulador de ATM"
+        '
+        'PictureBoxCC
+        '
+        Me.PictureBoxCC.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBoxCC.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBoxCC.Image = Global.ATM.My.Resources.Resources.CCLicense
+        Me.PictureBoxCC.Location = New System.Drawing.Point(520, 12)
+        Me.PictureBoxCC.Name = "PictureBoxCC"
+        Me.PictureBoxCC.Size = New System.Drawing.Size(88, 31)
+        Me.PictureBoxCC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBoxCC.TabIndex = 10
+        Me.PictureBoxCC.TabStop = False
+        '
         'FormConfig
         '
-        Me.AcceptButton = Me.ButtonApply
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.ButtonRestore
         Me.ClientSize = New System.Drawing.Size(624, 524)
         Me.ControlBox = False
         Me.Controls.Add(Me.PictureBoxCC)
@@ -855,8 +853,10 @@ Partial Class FormConfig
         Me.Controls.Add(Me.LabelTitle)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(320, 540)
         Me.Name = "FormConfig"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Configuración"
         Me.TabControlConfig.ResumeLayout(False)
         Me.TabPageGeneral.ResumeLayout(False)
@@ -875,8 +875,8 @@ Partial Class FormConfig
         Me.TabPageCards.ResumeLayout(False)
         Me.TabPageClientes.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        CType(Me.PictureBoxCC, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxCC, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

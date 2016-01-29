@@ -66,7 +66,7 @@ Partial Class CardReader
         'PictureBoxCirrus
         '
         Me.PictureBoxCirrus.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxCirrus.Image = Global.ATM.My.Resources.Resources.Cirrus
+        Me.PictureBoxCirrus.Image = Global.ATM.My.Resources.Resources.Cirrus90
         Me.PictureBoxCirrus.Location = New System.Drawing.Point(120, -14)
         Me.PictureBoxCirrus.Name = "PictureBoxCirrus"
         Me.PictureBoxCirrus.Size = New System.Drawing.Size(21, 30)
@@ -77,7 +77,7 @@ Partial Class CardReader
         'PictureBoxMaestro
         '
         Me.PictureBoxMaestro.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxMaestro.Image = Global.ATM.My.Resources.Resources.Maestro
+        Me.PictureBoxMaestro.Image = Global.ATM.My.Resources.Resources.Maestro90
         Me.PictureBoxMaestro.Location = New System.Drawing.Point(147, -14)
         Me.PictureBoxMaestro.Name = "PictureBoxMaestro"
         Me.PictureBoxMaestro.Size = New System.Drawing.Size(21, 30)
