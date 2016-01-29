@@ -23,7 +23,6 @@ Partial Class CardReader
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CardReader))
         Me.PanelReader = New System.Windows.Forms.Panel()
         Me.TimerCard = New System.Windows.Forms.Timer(Me.components)
         Me.PanelCard = New System.Windows.Forms.Panel()
@@ -43,7 +42,7 @@ Partial Class CardReader
         Me.PanelReader.Margin = New System.Windows.Forms.Padding(0, 3, 0, 0)
         Me.PanelReader.Name = "PanelReader"
         Me.PanelReader.Size = New System.Drawing.Size(192, 16)
-        Me.PanelReader.TabIndex = 2
+        Me.PanelReader.TabIndex = 0
         '
         'TimerCard
         '
@@ -61,13 +60,13 @@ Partial Class CardReader
         Me.PanelCard.Location = New System.Drawing.Point(5, 5)
         Me.PanelCard.Name = "PanelCard"
         Me.PanelCard.Size = New System.Drawing.Size(182, 24)
-        Me.PanelCard.TabIndex = 3
+        Me.PanelCard.TabIndex = 0
         Me.PanelCard.Visible = False
         '
         'PictureBoxCirrus
         '
         Me.PictureBoxCirrus.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxCirrus.Image = CType(resources.GetObject("PictureBoxCirrus.Image"), System.Drawing.Image)
+        Me.PictureBoxCirrus.Image = Global.ATM.My.Resources.Resources.Cirrus
         Me.PictureBoxCirrus.Location = New System.Drawing.Point(120, -14)
         Me.PictureBoxCirrus.Name = "PictureBoxCirrus"
         Me.PictureBoxCirrus.Size = New System.Drawing.Size(21, 30)
@@ -78,7 +77,7 @@ Partial Class CardReader
         'PictureBoxMaestro
         '
         Me.PictureBoxMaestro.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxMaestro.Image = CType(resources.GetObject("PictureBoxMaestro.Image"), System.Drawing.Image)
+        Me.PictureBoxMaestro.Image = Global.ATM.My.Resources.Resources.Maestro
         Me.PictureBoxMaestro.Location = New System.Drawing.Point(147, -14)
         Me.PictureBoxMaestro.Name = "PictureBoxMaestro"
         Me.PictureBoxMaestro.Size = New System.Drawing.Size(21, 30)

@@ -31,11 +31,11 @@ Partial Class Dispenser
         Me.PanelStatus.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelStatus.BackColor = System.Drawing.Color.LimeGreen
         Me.PanelStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelStatus.Location = New System.Drawing.Point(322, 19)
+        Me.PanelStatus.Location = New System.Drawing.Point(316, 19)
         Me.PanelStatus.Margin = New System.Windows.Forms.Padding(0, 3, 0, 0)
         Me.PanelStatus.Name = "PanelStatus"
         Me.PanelStatus.Size = New System.Drawing.Size(64, 8)
-        Me.PanelStatus.TabIndex = 4
+        Me.PanelStatus.TabIndex = 0
         '
         'PanelReader
         '
@@ -45,17 +45,17 @@ Partial Class Dispenser
         Me.PanelReader.Location = New System.Drawing.Point(0, 0)
         Me.PanelReader.Margin = New System.Windows.Forms.Padding(0, 3, 0, 0)
         Me.PanelReader.Name = "PanelReader"
-        Me.PanelReader.Size = New System.Drawing.Size(386, 16)
-        Me.PanelReader.TabIndex = 5
+        Me.PanelReader.Size = New System.Drawing.Size(380, 16)
+        Me.PanelReader.TabIndex = 0
         '
-        'MoneyDispenser
+        'Dispenser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.PanelStatus)
         Me.Controls.Add(Me.PanelReader)
-        Me.Name = "MoneyDispenser"
-        Me.Size = New System.Drawing.Size(386, 29)
+        Me.Name = "Dispenser"
+        Me.Size = New System.Drawing.Size(380, 30)
         Me.ResumeLayout(False)
 
     End Sub

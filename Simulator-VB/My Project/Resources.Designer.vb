@@ -61,16 +61,41 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a 	{BANK}
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Cirrus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Cirrus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Maestro() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Maestro", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca una cadena traducida similar a {BANK} [{ATM}]
+        '''---------------------------
+        '''{CODE}
+        '''---------------------------
         '''
-        '''Fecha	Hora	ATM		Nro.
-        '''{DATE}	{TIME}	{ATM}	{CODE}
+        '''Fecha - Hora
+        '''{DATE} - {TIME}
         '''
-        '''Nro. Tarjeta:	{CARD}
+        '''Nro. Tarjeta:
+        '''{CARD}
         '''
         '''{OPERATION}
         '''
-        '''Nro. Cuenta:	{ACCOUNT}
+        '''Nro. Cuenta:
+        '''{ACCOUNT}
         '''
         '''{DETAIL}
         '''.

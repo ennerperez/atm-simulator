@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>ATM.My.MyApplication</StartupObject>
     <RootNamespace>ATM</RootNamespace>
-    <AssemblyName>ATMS</AssemblyName>
+    <AssemblyName>ATM-Basic</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ATMS.xml</DocumentationFile>
+    <DocumentationFile>ATM-Basic.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ATMS.xml</DocumentationFile>
+    <DocumentationFile>ATM-Basic.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,15 +46,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>microchip.ico</ApplicationIcon>
+    <ApplicationIcon>..\Simulator-Shared\microchip.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MultiPanelControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MultiPanelControl.1.0.0.0\lib\net20\MultiPanelControl.dll</HintPath>
+    <Reference Include="MultiPanelControl, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MultiPanelControl.1.0.0.1\lib\net20\MultiPanelControl.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -80,7 +80,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Components\CardReader.Designer.vb">
       <DependentUpon>CardReader.vb</DependentUpon>
     </Compile>
@@ -110,6 +109,11 @@
     </Compile>
     <Compile Include="Components\ScreenPad.vb">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Views\AmountControl.Designer.vb">
       <DependentUpon>AmountControl.vb</DependentUpon>
@@ -147,16 +151,16 @@
     <Compile Include="Controls\Button.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FormConfig.Designer.vb">
+    <Compile Include="Views\FormConfig.Designer.vb">
       <DependentUpon>FormConfig.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormConfig.vb">
+    <Compile Include="Views\FormConfig.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormATM.vb">
+    <Compile Include="Views\FormATM.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormATM.Designer.vb">
+    <Compile Include="Views\FormATM.Designer.vb">
       <DependentUpon>FormATM.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -170,11 +174,6 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -217,17 +216,17 @@
     <EmbeddedResource Include="Controls\NumericButton.resx">
       <DependentUpon>NumericButton.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConfig.resx">
+    <EmbeddedResource Include="Views\FormConfig.resx">
       <DependentUpon>FormConfig.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormATM.resx">
+    <EmbeddedResource Include="Views\FormATM.resx">
       <DependentUpon>FormATM.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -237,7 +236,9 @@
     <None Include="..\README.md">
       <Link>README.md</Link>
     </None>
-    <None Include="app.config" />
+    <None Include="..\Simulator-Shared\app.config">
+      <Link>app.config</Link>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -250,8 +251,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="microchip.ico" />
-    <None Include="Resources\Receipt.txt" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Simulator-Shared\microchip.ico">
+      <Link>microchip.ico</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Cirrus.png">
+      <Link>Resources\Cirrus.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Maestro.png">
+      <Link>Resources\Maestro.png</Link>
+    </Content>
+    <Content Include="..\Simulator-Shared\Resources\Receipt.txt">
+      <Link>Resources\Receipt.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

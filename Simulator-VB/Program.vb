@@ -3,6 +3,21 @@ Imports System.Runtime.InteropServices
 Imports System.Xml.XPath
 Imports Newtonsoft.Json
 
+Namespace My
+
+    Partial Friend Class MyApplication
+        Private Sub MyApplication_Startup(sender As Object, e As ApplicationServices.StartupEventArgs) Handles Me.Startup
+            AllocConsole()
+        End Sub
+
+        Declare Function AllocConsole Lib "kernel32" () As Int32
+        Declare Function FreeConsole Lib "kernel32" () As Int32
+
+    End Class
+
+End Namespace
+
+
 Public Module Program
 
     Public ReadOnly Property DataPath As String

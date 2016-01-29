@@ -53,7 +53,7 @@ Partial Class KeyPad
         Me.ButtonCancel.Name = "ButtonCancel"
         Me.ButtonCancel.Padding = New System.Windows.Forms.Padding(3)
         Me.ButtonCancel.Size = New System.Drawing.Size(128, 48)
-        Me.ButtonCancel.TabIndex = 0
+        Me.ButtonCancel.TabIndex = 12
         Me.ButtonCancel.TabStop = False
         Me.ButtonCancel.Text = "CANCELAR"
         Me.ButtonCancel.TextAlign = System.Drawing.ContentAlignment.TopLeft
@@ -72,7 +72,7 @@ Partial Class KeyPad
         Me.ButtonFix.Name = "ButtonFix"
         Me.ButtonFix.Padding = New System.Windows.Forms.Padding(3)
         Me.ButtonFix.Size = New System.Drawing.Size(128, 48)
-        Me.ButtonFix.TabIndex = 0
+        Me.ButtonFix.TabIndex = 13
         Me.ButtonFix.TabStop = False
         Me.ButtonFix.Text = "COREGIR"
         Me.ButtonFix.TextAlign = System.Drawing.ContentAlignment.TopLeft
@@ -91,7 +91,7 @@ Partial Class KeyPad
         Me.ButtonVoid.Name = "ButtonVoid"
         Me.ButtonVoid.Padding = New System.Windows.Forms.Padding(3)
         Me.ButtonVoid.Size = New System.Drawing.Size(128, 48)
-        Me.ButtonVoid.TabIndex = 0
+        Me.ButtonVoid.TabIndex = 14
         Me.ButtonVoid.TabStop = False
         Me.ButtonVoid.TextAlign = System.Drawing.ContentAlignment.BottomRight
         Me.ButtonVoid.UseVisualStyleBackColor = False
@@ -109,7 +109,7 @@ Partial Class KeyPad
         Me.ButtonConfirm.Name = "ButtonConfirm"
         Me.ButtonConfirm.Padding = New System.Windows.Forms.Padding(3)
         Me.ButtonConfirm.Size = New System.Drawing.Size(128, 48)
-        Me.ButtonConfirm.TabIndex = 0
+        Me.ButtonConfirm.TabIndex = 15
         Me.ButtonConfirm.TabStop = False
         Me.ButtonConfirm.Text = "CONFIRMAR"
         Me.ButtonConfirm.TextAlign = System.Drawing.ContentAlignment.TopLeft
@@ -147,7 +147,7 @@ Partial Class KeyPad
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(3)
         Me.Button2.Size = New System.Drawing.Size(48, 48)
-        Me.Button2.TabIndex = 0
+        Me.Button2.TabIndex = 1
         Me.Button2.TabStop = False
         Me.Button2.Text = "2"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -166,7 +166,7 @@ Partial Class KeyPad
         Me.Button3.Name = "Button3"
         Me.Button3.Padding = New System.Windows.Forms.Padding(3)
         Me.Button3.Size = New System.Drawing.Size(48, 48)
-        Me.Button3.TabIndex = 0
+        Me.Button3.TabIndex = 2
         Me.Button3.TabStop = False
         Me.Button3.Text = "3"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -185,7 +185,7 @@ Partial Class KeyPad
         Me.Button4.Name = "Button4"
         Me.Button4.Padding = New System.Windows.Forms.Padding(3)
         Me.Button4.Size = New System.Drawing.Size(48, 48)
-        Me.Button4.TabIndex = 0
+        Me.Button4.TabIndex = 3
         Me.Button4.TabStop = False
         Me.Button4.Text = "4"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -203,7 +203,7 @@ Partial Class KeyPad
         Me.Button5.Name = "Button5"
         Me.Button5.Padding = New System.Windows.Forms.Padding(3)
         Me.Button5.Size = New System.Drawing.Size(48, 48)
-        Me.Button5.TabIndex = 0
+        Me.Button5.TabIndex = 4
         Me.Button5.TabStop = False
         Me.Button5.Text = "5"
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -221,7 +221,7 @@ Partial Class KeyPad
         Me.Button6.Name = "Button6"
         Me.Button6.Padding = New System.Windows.Forms.Padding(3)
         Me.Button6.Size = New System.Drawing.Size(48, 48)
-        Me.Button6.TabIndex = 0
+        Me.Button6.TabIndex = 5
         Me.Button6.TabStop = False
         Me.Button6.Text = "6"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -240,7 +240,7 @@ Partial Class KeyPad
         Me.Button7.Name = "Button7"
         Me.Button7.Padding = New System.Windows.Forms.Padding(3)
         Me.Button7.Size = New System.Drawing.Size(48, 48)
-        Me.Button7.TabIndex = 0
+        Me.Button7.TabIndex = 6
         Me.Button7.TabStop = False
         Me.Button7.Text = "7"
         Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -258,7 +258,7 @@ Partial Class KeyPad
         Me.Button8.Name = "Button8"
         Me.Button8.Padding = New System.Windows.Forms.Padding(3)
         Me.Button8.Size = New System.Drawing.Size(48, 48)
-        Me.Button8.TabIndex = 0
+        Me.Button8.TabIndex = 7
         Me.Button8.TabStop = False
         Me.Button8.Text = "8"
         Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -276,7 +276,7 @@ Partial Class KeyPad
         Me.Button9.Name = "Button9"
         Me.Button9.Padding = New System.Windows.Forms.Padding(3)
         Me.Button9.Size = New System.Drawing.Size(48, 48)
-        Me.Button9.TabIndex = 0
+        Me.Button9.TabIndex = 8
         Me.Button9.TabStop = False
         Me.Button9.Text = "9"
         Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -296,7 +296,7 @@ Partial Class KeyPad
         Me.Button00.Name = "Button00"
         Me.Button00.Padding = New System.Windows.Forms.Padding(3)
         Me.Button00.Size = New System.Drawing.Size(48, 48)
-        Me.Button00.TabIndex = 0
+        Me.Button00.TabIndex = 9
         Me.Button00.TabStop = False
         Me.Button00.TextAlign = System.Drawing.ContentAlignment.BottomRight
         Me.Button00.UseVisualStyleBackColor = False
@@ -309,12 +309,12 @@ Partial Class KeyPad
         Me.Button0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button0.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button0.Letters = ""
-        Me.Button0.Location = New System.Drawing.Point(51, 162)
+        Me.Button0.Location = New System.Drawing.Point(54, 162)
         Me.Button0.Margin = New System.Windows.Forms.Padding(3, 3, 3, 0)
         Me.Button0.Name = "Button0"
         Me.Button0.Padding = New System.Windows.Forms.Padding(3)
         Me.Button0.Size = New System.Drawing.Size(48, 48)
-        Me.Button0.TabIndex = 0
+        Me.Button0.TabIndex = 10
         Me.Button0.TabStop = False
         Me.Button0.Text = "0"
         Me.Button0.TextAlign = System.Drawing.ContentAlignment.BottomRight
@@ -329,12 +329,12 @@ Partial Class KeyPad
         Me.ButtonDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonDot.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonDot.Letters = ""
-        Me.ButtonDot.Location = New System.Drawing.Point(107, 162)
+        Me.ButtonDot.Location = New System.Drawing.Point(108, 162)
         Me.ButtonDot.Margin = New System.Windows.Forms.Padding(3, 3, 3, 0)
         Me.ButtonDot.Name = "ButtonDot"
         Me.ButtonDot.Padding = New System.Windows.Forms.Padding(3)
         Me.ButtonDot.Size = New System.Drawing.Size(48, 48)
-        Me.ButtonDot.TabIndex = 0
+        Me.ButtonDot.TabIndex = 11
         Me.ButtonDot.TabStop = False
         Me.ButtonDot.TextAlign = System.Drawing.ContentAlignment.BottomRight
         Me.ButtonDot.UseVisualStyleBackColor = False
@@ -359,6 +359,7 @@ Partial Class KeyPad
         Me.Controls.Add(Me.Button00)
         Me.Controls.Add(Me.Button0)
         Me.Controls.Add(Me.ButtonDot)
+        Me.DoubleBuffered = True
         Me.MinimumSize = New System.Drawing.Size(320, 210)
         Me.Name = "KeyPad"
         Me.Size = New System.Drawing.Size(320, 210)
