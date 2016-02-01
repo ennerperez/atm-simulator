@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator-CSharp", "Simulator-CSharp\Simulator-CSharp.csproj", "{7438F19C-9417-4DE3-900C-427A234151E1}"
 EndProject
@@ -24,6 +24,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{
 		Simulator-Shared\Resources\Maestro0.png = Simulator-Shared\Resources\Maestro0.png
 		Simulator-Shared\Resources\Maestro90.png = Simulator-Shared\Resources\Maestro90.png
 		Simulator-Shared\Resources\Receipt.txt = Simulator-Shared\Resources\Receipt.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1ACBBC57-5B77-41F8-AA9E-1C4A4B7EA626}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
