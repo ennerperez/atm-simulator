@@ -11,6 +11,8 @@ namespace ATM.Models
         public string Number { get; set; }
         public string Password { get; set; }
 
+        public string PasswordHash { get; set; }
+
         public string Bank { get; set; }
 
         public System.DateTime Exp { get; set; }

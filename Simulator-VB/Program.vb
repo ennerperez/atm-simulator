@@ -1,6 +1,7 @@
 ﻿Imports System.Linq
 Imports System.Runtime.InteropServices
 Imports System.Xml.XPath
+Imports ATM.Models
 Imports Newtonsoft.Json
 
 Namespace My
@@ -107,6 +108,7 @@ Public Module Program
             _card11.Number = "0001 0001 0001 0001"
             _card11.Exp = Now.AddMonths(6)
             _card11.Password = "1234"
+            _card11.Hash = _card11.Password.GetHashCode
             _card11.Account1 = _acount11.Number
             _card11.Account2 = _acount12.Number
 
@@ -131,6 +133,7 @@ Public Module Program
             _card21.Number = "9008 9008 9002 9002"
             _card21.Exp = Now.AddMonths(3)
             _card21.Password = "1234"
+            _card21.Hash = _card21.Password.GetHashCode
             _card21.Account1 = _acount21.Number
 
             _client2.Cards.Add(_card21)
@@ -174,5 +177,35 @@ Public Module Program
         FormConfig.Location = New Point(FormATM.Location.X - FormConfig.Width - 3, FormATM.Location.Y)
 
     End Sub
+
+#Region "Controllers"
+
+    Public Function ValidateCard(number As String, passHash As String) As Boolean
+        Dim card = GetCard(number, passHash)
+        Return card IsNot Nothing
+    End Function
+
+    Public Function GetCard(number As String, passHash As String) As Models.Card
+
+        Dim card = Clients.Select(Function(cl)
+                                      Return cl.Cards.Where(Function(cd) cd.Number = number AndAlso cd.Hash = passHash).FirstOrDefault()
+                                  End Function).FirstOrDefault
+        Return card
+    End Function
+
+    Friend Function GetAccount(card As Models.Card, v As Integer) As Models.Account
+        'Dim number = IIf(v = 0, card.Account1, card.Account2)
+
+        Dim client = (From item In Clients
+                      Where item.Cards.Contains(card)).FirstOrDefault
+
+        Dim account = client.Accounts.ElementAt(v)
+
+        Return account
+
+    End Function
+
+
+#End Region
 
 End Module

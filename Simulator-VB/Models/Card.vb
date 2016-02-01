@@ -5,6 +5,8 @@
         Public Property Number As String
         Public Property Password As String
 
+        Public Property Hash As String
+
         Public Property Bank As String
 
         Public Property Exp As Date

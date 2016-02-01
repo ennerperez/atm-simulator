@@ -36,6 +36,7 @@
     Private Sub CardReader_DragDrop(sender As Object, e As DragEventArgs) Handles Me.DragDrop
         If Not IsCardInserted Then
             _Number = e.Data.GetData(DataFormats.Text).ToString()
+            Console.WriteLine("Leyendo tarjeta: " & _Number)
             OnCardInserted(Me, EventArgs.Empty)
         End If
     End Sub

@@ -104,6 +104,12 @@
     <Compile Include="Components\Printer.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Components\Screen.Designer.vb">
+      <DependentUpon>Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Screen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Components\ScreenPad.Designer.vb">
       <DependentUpon>ScreenPad.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\Printer.resx">
       <DependentUpon>Printer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Screen.resx">
+      <DependentUpon>Screen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ScreenPad.resx">
       <DependentUpon>ScreenPad.vb</DependentUpon>
